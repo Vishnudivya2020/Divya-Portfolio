@@ -1,0 +1,339 @@
+:root{
+    --yellow:#FFC54D;
+ }
+ 
+ 
+ body{
+     margin:0;
+     padding:0;
+     font-family: "Itim", cursive;
+     font-style: normal;
+     background-image: url("https://img.freepik.com/premium-photo/dark-rough-cement-wall-background-graphic-design-wallpaper-grungy-black-blue-concrete-texture-vintage-style-old-plaster-floor-has-mysterious-terrifying-age_226189-6264.jpg");
+     background-size:cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    color:#beb0b0;
+    overflow-x:hidden;
+ }
+ nav a{
+     text-decoration: none;
+     color:whitesmoke;
+     padding:10px;
+     align-items: flex-end;
+ }
+ header nav{
+     display:flex;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+ }
+ .Mycontainer{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+   min-width: 300px;
+    flex-wrap: wrap;
+ }
+ .name{
+   color:#D94452;
+    display: grid;
+    grid-template-columns: 350px;
+  min-width:50px;
+  flex-direction: flex-start;
+ }
+ .name p{
+   color:#93d922;
+   font-size: larger;
+   
+ }
+ .Mycontainer img{
+    justify-items: end;
+    padding:20px;
+    width:200px;
+    height:220px;
+    border-radius: 50%;
+    border:2px solid transparent;
+    animation:rainbowGlow 5s linear infinite ;
+   margin-left: 50px;
+
+ }
+ @keyframes rainbowGlow{
+   20% {box-shadow: 0 0 15px #ff0000;}
+   25%{box-shadow: 0 0 15px #00ff00;}
+   50%{box-shadow: 0 0 15px #0000ff;}
+ }
+ .social-icons{
+   display:flex;
+   justify-content: center;
+   gap:50px;
+   margin-top: 30px;
+  
+ }
+ .social-icons a{
+   color:aliceblue;
+   font-size:24px ;
+   transition: transform 0.2s ease-in-out ;
+ }
+ .social-icons a:hover{
+   transform: scale(1.2);
+   color:#FB773C;
+ }
+
+.about-section{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:80px;
+  flex-wrap: wrap;
+   padding:40px;
+   border-radius:10px;
+   margin-top: 80px;
+}
+.about-image{
+   border:3px solid #a3ff00;
+border-radius: 10px;
+flex-direction: flex-start;
+  
+}
+.about-image img{
+  width:350px;
+  height:300px;
+}
+.about-content {
+   max-width: 500px;
+   color: #a3ff00; /* Bright green text */
+   font-size: 18px;
+   line-height: 1.6;
+}
+
+.about-content h2 {
+   color: #ff3b3b; /* Red heading */
+   font-size: 26px;
+   margin-bottom: 15px;
+}
+
+.about-buttons {
+   display: flex;
+   gap: 20px;
+   margin-top: 15px;
+}
+
+.about-buttons button {
+   background-color: #32cd32; /* Bright green buttons */
+   color: #000;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+
+.about-buttons button:hover {
+   background-color: #228b22; /* Darker green on hover */
+   color: #fff;
+}
+.education{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-image: url("https://img.freepik.com/premium-photo/graduation-cap-stack-books-wooden-table-education-concept_634053-10156.jpg");
+   width: 500px;
+   height: 250px;
+ margin-left: 6em;
+   
+}
+
+.edu-container h3{
+   color:white;
+   font-size:x-large;
+  
+   
+}
+.edu-container ul li{
+   color:#ff3b3b;
+  
+}
+.skills-container{
+   display:flex;
+   flex-direction:row;
+   margin-top:80px;
+}
+.skill{
+   font-size:xx-large;
+}
+.logo{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  margin-left:150px;
+  overflow: hidden;
+ 
+  animation:float 3s ease-in-out infinite;
+}
+.logo img{
+   
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }  /* Move up */
+  100% { transform: translateY(0); }    /* Move back to original */
+}
+
+.promo{
+   background-image: url("https://thumbs.dreamstime.com/b/woman-working-laptop-cup-coffee-table-young-casual-wear-modern-sitting-glass-water-concept-remote-work-223836531.jpg");
+   background-repeat: no-repeat;
+   display: flex;
+   width:550px;
+   height:350px;
+   justify-content: center;
+   align-items: center;
+   color:#00ff00;
+   margin-left: 280px;
+   margin-top: 70px;
+   box-shadow: 4px 0px 4px rgba(0,0,0,0.2);
+   border-radius: 8px;
+}
+.pro-head{
+   font-family: "Itim", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2rem;
+    color:#D94452;
+    margin-left: 30px;
+    
+}
+.btn{
+  width:200px;
+   padding:10px;
+   background-color: #93d922;
+   border:none;
+   border-radius:6px;
+   color:#0000ff;
+   font-family: "Itim",serif;
+   font-size: x-large;
+   margin-bottom:10px;
+   cursor:pointer;
+   transition: transform 0.3s ease; 
+}
+.btn:hover  {
+ transform: scale(1.1);
+}
+#project{
+   text-align: center;
+    padding: 40px;
+    font-family: "Itim",serif;
+}
+.card{
+   background:rgba(255, 255, 255, 0.1) ;
+   border-radius:10px;
+   box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+   width:500px;
+   padding:10px;
+  
+   height:530px;
+  backdrop-filter: blur(10px);
+   border:1px solid rgba(255,255,255,0.3);
+   display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  transition: transform 0.3s ease; 
+  display:none;
+}
+.card:hover{
+   transform: scale(1.1);
+}
+
+#Html-card  {
+  
+   height:auto;
+   border-radius: 3px;
+}
+.card h3,.card p{
+   margin:10px 0;
+   font-family:"Itim", serif;
+   color:#ccff33;
+   word-spacing: 5px;
+   text-align: center;
+   
+}
+#Project-2,.jsProject{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.pro-BTN button {
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width:100px;
+  max-width:150px;
+  white-space:nowrap;
+  /* overflow:hidden; */
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-bottom:10px;
+}
+
+.pro-BTN button:hover {
+  background-color: #228b22;
+}
+.view-code-btn{
+  margin-left:40px;
+  margin-top:20px;
+}
+.view-app-btn{
+  margin-left:50px;
+  margin-top:20px;
+}
+#contact{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.container h2{
+   color:#D94452;
+}
+.container p{
+   color:#93d922;
+}
+footer{
+    background-color: black;
+    height:60px;
+ }
+  footer p{
+    color:whitesmoke;
+  position:absolute;
+    margin-left: 500px;
+    
+  }
+  @media  screen and(max-width:420px) {
+   body{
+      font-size:800px;
+   }
+   .promo{
+      display: flex;
+      flex-direction: flex-start;
+      margin-left:280px ;
+     }
+     footer{
+        width:200px;
+        align-items: end;
+     }
+  }
+ 
