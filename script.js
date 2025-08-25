@@ -38,26 +38,6 @@ Resume.addEventListener("click",function() {
 });
 
 
-// //For Project
-// let proBtn = document.getElementById("html-btn");
-// let Card = document.getElementById('Html-card');
-
-// let cssBtn = document.getElementById('css-btn');
-// let Card2 = document.getElementById('Project-2');
-
-// // For HTML Projects
-// proBtn.addEventListener('click',()=>{
-//   if(Card.style.display === 'none'){
-//     Card.style.display = 'block';
-//   }else {
-//     Card.style.display = 'none';
-//   }
-// });
-
-// // For HTML , CSS Projects
-
-// // For HTML, CSS Projects (show both cards)
-
 // Get elements
 let proBtn = document.getElementById('html-btn');
 let Card = document.getElementById('Html-card');
@@ -73,6 +53,14 @@ let Card5 = document.getElementById("JS2-card");
 let bsBtn = document.getElementById('BS-btn');
 let Card6 = document.getElementById('BS-card');
 
+let reactBtn = document.getElementById('react-btn');
+let Card7 = document.getElementById("React-card");
+let Card8 = document.getElementById("React2-card");
+
+let mernBtn = document.getElementById('mern-btn');
+let Card9 = document.getElementById("Mern-card");
+let Card10 = document.getElementById("Mern2-card");
+
 // Initially hide all cards
 Card.style.display = 'none';
 Card2.style.display = 'none';
@@ -80,6 +68,10 @@ Card3.style.display = 'none';
 Card4.style.display = 'none';
 Card5.style.display = 'none';
 Card6.style.display = 'none';
+Card7.style.display = 'none';
+Card8.style.display = 'none';
+Card9.style.display = 'none';
+Card10.style.display = 'none';
 
 // Toggle HTML project card
 proBtn.addEventListener('click', () => {
@@ -124,5 +116,31 @@ bsBtn.addEventListener('click', () => {
     Card6.style.display = 'none';
   }
 });
+
+  // Toggle HTML,CSS,JS ,REACT PRIJECT Cards
+  reactBtn.addEventListener('click',()=>{
+   const allHidden = Card7.style.display === 'none' && Card8.style.display === 'none';
+
+  if (allHidden) {
+    Card7.style.display = 'block';
+    Card8.style.display = 'block';
+  } else {
+    Card7.style.display = 'none';
+    Card8.style.display = 'none';
+  }
+  })
+
+  // Toggle HTML,CSS,JS ,REACT PRIJECT Cards
+  mernBtn.addEventListener('click',()=>{
+   const allHidden = Card9.style.display === 'none' && Card10.style.display === 'none';
+
+  if (allHidden) {
+    Card9.style.display = 'block';
+    Card10.style.display = 'block';
+  } else {
+    Card9.style.display = 'none';
+    Card10.style.display = 'none';
+  }
+  })
 
 
